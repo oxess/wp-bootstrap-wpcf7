@@ -1,7 +1,7 @@
 # wp-bootstrap-wpcf7
 
 ## How it's works?
-This is easy, contact form 7 use a wordpress filters as every good write plugin in wordpress.
+This is easy, contact form 7 use a wordpress filters as every good wrote plugin in wordpress.
 This script create a filter & looking for inputs, in render html, and add class
 `form-control` to find inputs.
 It's all.
