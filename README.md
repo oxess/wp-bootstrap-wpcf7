@@ -12,8 +12,41 @@ It's all.
 ```bash
 composer require oxess/wp-bootstrap-wpcf7
 ```
-- Import in wordpress theme :
+- Init in wordpress theme :
 ```php
 # functions.php
-require_once __DIR__ . '/vendor/oxess/wp-bootstrap-wpcf7/wp-bootstrap-wpcf7.php';
+Ox_Bootstrap_WPCF7::init( [] );
+```
+
+## Examples:
+
+- Simple use:
+```php
+# functions.php
+Ox_Bootstrap_WPCF7::init( [] );
+```
+
+- With change submit css class
+```php
+# functions.php
+Ox_Bootstrap_WPCF7::init( [
+    'class__for' => array(
+        'submit' => 'btn btn-default'
+    )
+] );
+```
+
+## Configuration:
+
+```php
+$cfg = array(
+    'delimiter'     => ';',
+    'priority'      => 99,
+    'class__for'    => array(
+        'input'    => 'form-control',
+        'select'   => 'form-control',
+        'textarea' => 'form-control',
+        'submit'   => 'btn btn-primary',
+    ),
+)
 ```
