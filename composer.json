@@ -1,6 +1,7 @@
 {
     "name": "oxess/wp-bootstrap-wpcf7",
     "description": "Implements bootstrap class from in wordpress contact form 7",
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Mikolaj Jeziorny",
